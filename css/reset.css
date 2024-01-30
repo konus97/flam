@@ -69,6 +69,33 @@ body{
 @media(min-width:1921px){
     /*.information & #map */
 
+
+    .visual .visual_text{
+        width: 90%;
+        position: relative;
+        left: 5%;
+        bottom: 550px;
+    } 
+
+    .visual .visual_text h3{
+        font-size: 7.2rem;
+        letter-spacing: 0em;
+        line-height: 1.4;
+        color: #fff;
+        font-weight: 700;
+    }
+
+    .visual .visual_text p{
+        font-size: 2.4rem;
+        letter-spacing: -0.03em;
+        line-height: 2;
+        color: #fff;
+        font-weight: 400;
+        margin-top: 30px;
+        word-break: keep-all;
+        word-wrap: break-word;
+    }
+
     #map{
         height:calc(100vh - 200px);
         position:relative;
