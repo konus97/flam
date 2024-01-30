@@ -200,12 +200,11 @@
             width: 90%;
             position: relative;
             left: 5%;
-            bottom: 500px;
-            border-bottom:1px solid #fff;
+            bottom: 420px;
         } 
 
         .visual .visual_text h3{
-            font-size: 4.2rem;
+            font-size: 5rem;
             letter-spacing: 0em;
             line-height: 1.4;
             color: #fff;
