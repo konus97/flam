@@ -203,8 +203,10 @@
     .visual .visual_text{
         width: 90%;
         position: relative;
-        left: 5%;
-        bottom: 360px;
+        left: 50%;
+        bottom: 50%;
+        text-align:center;
+        transform:translate(-50%,-50%);
     } 
 
     .visual .visual_text h3{
