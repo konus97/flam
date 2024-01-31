@@ -1,9 +1,12 @@
- @media (max-width:767px){    
-    .wraps > section {
-       display:block;
-       background-color: #fff;
-    }
 
+
+
+@media(max-width:767px){
+
+    .wraps > section {
+        height:100vh;
+        min-height:910px;
+    }
     .wraps > section:last-child {
         /* height:calc(100vh - 200px);
         padding-top:70px;  */
@@ -11,11 +14,12 @@
     }
 
     .wraps > section:not(.visual) {
-       
+        padding-top:70px; 
         box-sizing: border-box;
-        background: #fff;
     }
     .wraps{
+        height: 100%;
+        min-height: 100%;
         /* padding-bottom:200px; */
         box-sizing: border-box;
     }
@@ -75,7 +79,7 @@
     }
 
     header .logo{
-        width:11rem;
+        width:12.6rem;
         height:100%;
     }
     header .logo a{
@@ -91,26 +95,120 @@
         display:none;
     }
 
+    header > div ul a{
+        padding:0 20px; 
+        display:block; 
+        color:#fff;
+        font-size:1.4rem;
+    }
 
-   .scroll{display:none;}
+    #navi li{
+        border-bottom:3px solid rgba(165, 152, 186, 0);
+        box-sizing: border-box
+    }
+
+    #navi li:hover,
+    #navi li.on{
+        box-sizing: border-box;
+        border-bottom:3px solid #16305f;
+    }
+
+
+    /*메인 스크롤 애니메이션*/
+    .scroll {
+        position: absolute;
+        left: 50%;
+        bottom: 40px;
+        transform: translate(-50%,0);
+        z-index: 1;
+    
+    }
+
+    .scroll_text {
+        
+        display: block;
+        font-weight: 600;
+        color: #FFF;
+        margin-bottom: 15px;
+        font-size:1.3rem;
+    }
+    .dots {
+        width: 2.4rem;
+        margin: 0 auto;
+        height: 45px;
+        position: relative;
+    }
+    .dots span {
+        position: absolute;
+        display: block;
+        background-color: #fff;
+        border-radius: 50%;
+        width: 2.4rem;
+        height: 24px;
+    }
+    .dots span:nth-child(1) {
+        left: 0;
+        top: 0;
+        opacity: .1;
+        transform: translateY(0px);
+        animation: dots1 2s infinite;
+    }
+    .dots span:nth-child(2) {
+        left: 0;
+        top: 0;
+        opacity: .3;
+        transform: translateY(4px);
+        animation: dots1 2s infinite;
+    }
+    .dots span:nth-child(3) {
+        left: 0;
+        top: 0;
+        opacity: .5;
+        transform: translateY(9px);
+        animation: dots1 2s infinite;
+    }
+    .dots span:nth-child(4) {
+        left: 0;
+        top: 0;
+        opacity: .7;
+        transform: translateY(13px);
+        animation: dots1 2s infinite;
+    }
+    .dots span:nth-child(5) {
+    left: 0;
+        top: 0;
+        opacity: .8;
+        transform: translateY(16px);
+        animation: dots1 2s infinite;
+    }
+    .dots span:nth-child(6) {
+        left: 0;
+        top: 0;
+        opacity: 1;
+        transform: translateY(19px);
+        animation: dots1 2s infinite;
+    }
+    @keyframes dots1{
+        0%{
+        }
+        100%{
+        transform: translateY(19px);
+        }
+    }
+
 
     /*.visual & #main */
 
-    .visual{
-         position: relative;
-         width:100%;
-         height:400px;
-    }
+
     .visual .visual_text{
         width: 90%;
         position: relative;
         left: 5%;
-        bottom: 180px;
-        z-index:3;
+        bottom: 500px;
     } 
 
     .visual .visual_text h3{
-            font-size: 2.8rem;
+            font-size: 3rem;
             letter-spacing: 0em;
             line-height: 1.4;
             color: #fff;
@@ -118,71 +216,37 @@
     }
 
     .visual .visual_text p{
-        font-size: 1.5rem;
+        font-size: 1.6rem;
         letter-spacing: -0.03em;
-        line-height: 4;
+        line-height: 1.4;
         color: #fff;
         font-weight: 400;
-        
+        margin-top: 30px;
         word-break: keep-all;
         word-wrap: break-word;
     }
     .video_wrap{
-        position: relative;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 1; /* 다른 콘텐츠 위에 배치 */
-        overflow: hidden;
+        width:100%;
+        height:100vh;    
     }
 
-    .video_wrap video{
+    video{
         width:100%; 
         height:100%;
         object-fit:cover;
-        pointer-events: none; /* 동영상 영역에 대한 이벤트 비활성화 */
-        
-        /* 재생 버튼 및 컨트롤러 숨김 처리 */
-        outline: none;
-        border: none;
-        -webkit-user-select: none;
-        -webkit-touch-callout: none;
-        user-select: none;
     }
-
-    /*비디오*/
-    /* 전체화면 버튼 */ 
-video::-webkit-media-controls-fullscreen-button {display: none !important;} 
-
-/* 일시정지, 재생 버튼 */ 
-video::-webkit-media-controls-play-button {display: none !important;} 
-
-/* 재생 슬라이드..? */ 
-video::-webkit-media-controls-timeline {display: none !important;} 
-
-/* 현재 진행 시간 */ 
-video::-webkit-media-controls-current-time-display{display: none !important;} 
-
-/* 전체 시간 */ 
-video::-webkit-media-controls-time-remaining-display {display: none !important;} 
-
-/* 음소거 버튼 */ 
-video::-webkit-media-controls-mute-button {display: none !important;} 
-
-/* 볼륨 조절 슬라이드 */ 
-video::-webkit-media-controls-volume-slider {display: none !important;} 
-
-/* 괄호에 display: none !important; 를 추가하면된다. 
-예 ) 전체화면 전환 버튼을 숨긴다. 다만 더블클릭으로 전체화면이 되는 기능등은 
-그대로고 단지 버튼만 없앤다. */ 
-video::-webkit-media-controls-fullscreen-button { display: none !important; }
 
 
 
     /*.service & #work */
 
-    .service {padding-top:100px;}
+    .service {          
+        /* display: flex;
+        justify-content: space-between;
+        align-items:center;
+        flex-direction:row-reverse; */
+        height:100%;
+    } 
 
     .service ul {
        
@@ -191,13 +255,13 @@ video::-webkit-media-controls-fullscreen-button { display: none !important; }
         box-sizing: border-box;
         flex-wrap:wrap;
         justify-content:space-between; 
-        margin:50px 0px;
-
+        margin-top:50px;
+        font-size:1.5rem;
     }
 
     .service ul li {
         width:48.5%; 
-        height:300px;
+        height:250px;
         position:relative; 
         background: #dfeafe; 
         border-radius: 1.8rem;
@@ -206,9 +270,6 @@ video::-webkit-media-controls-fullscreen-button { display: none !important; }
     .service ul li h3 {
         font-size:1.6rem;
         padding-bottom:.7rem;
-    } 
-    .service ul li p {
-        font-size:1.4rem;
     } 
 
    
@@ -225,7 +286,7 @@ video::-webkit-media-controls-fullscreen-button { display: none !important; }
 
     .service ul img{
         width: 100%; 
-        height:100px; 
+        height:85px; 
         object-fit: contain;
     }
 
@@ -241,7 +302,7 @@ video::-webkit-media-controls-fullscreen-button { display: none !important; }
 
     .text_group {
         /* text-align:center; */
-        font-size :1.6rem;
+        font-size :2rem;
     }
 
     .text_group h2 {
@@ -251,6 +312,7 @@ video::-webkit-media-controls-fullscreen-button { display: none !important; }
         margin-bottom:7px;
     }
     .text_group p {
+        font-size: 1.5rem;
         padding-top:13px;
       
     }
@@ -263,19 +325,19 @@ video::-webkit-media-controls-fullscreen-button { display: none !important; }
 
 
     /*.business & #offer */
-    .m95{
-        width: 95%!important;
-        margin: 0 auto;
-    }
 
-    .business{padding:50px 0px;}
+    .business{
+        position:relative;
+    }
     .business .con2_wrap{
         width:100%;
         box-sizing: border-box;
         text-align:center;
         margin:0 auto ;
         background: #eff2f4;
-        
+        position:absolute;
+        top:50%;
+        transform: translateY(-50%);
         padding: 60px 0;
         
     }
@@ -287,19 +349,20 @@ video::-webkit-media-controls-fullscreen-button { display: none !important; }
 
     .business div h3{
        
-        font-size: 2.4rem;
+        font-size: 2.6rem;
         line-height: 1.42;
         font-weight: 600;
         color: #080808;
         letter-spacing: -1.28px;
         text-align: center;
-        margin: 15px 0 37px;
+        margin: 20px 0 57px;
 
     }
 
     .business div > img{
         width:3rem;
     }
+    .m95{width:95%!important;}
 
     .business ul{
         display:flex; 
@@ -311,8 +374,8 @@ video::-webkit-media-controls-fullscreen-button { display: none !important; }
     .business ul li{
         width:10rem;
         height:10rem;
-        padding:19.8px 0px;
-        border-radius: 20px; 
+        padding:20px 0px;
+        border-radius: 30px; 
         box-shadow: 5px 2px 22px -15px;
         background: #fff;
         text-align:center;   
@@ -320,16 +383,16 @@ video::-webkit-media-controls-fullscreen-button { display: none !important; }
         margin-right:10px;
     }
     .business ul li:last-child{
-        margin-right:0;
+        margin-right:0px;
     }
 
 
     .business ul li div img{
-        width:3.2rem;
+        width:3rem;
     }
 
     .business ul li p{
-        padding-top:2px;
+        padding-top:3px;
         color:#080808;
         font-size:1.4rem;
     }
@@ -338,13 +401,20 @@ video::-webkit-media-controls-fullscreen-button { display: none !important; }
 
     /*.information & #map */
 
+        
+    #map{
+        height:calc(100vh - 200px);
+        /* position:relative;
+        transform: translateY(-200px);
+         */
+        
+    }
 
     .info {
-        
-        box-sizing: border-box;            
-        
+        padding-top:0px;
+        text-align: left;
+        box-sizing: border-box;        
         font-size:1.4rem;
-       
         vertical-align: center;
 
     }
@@ -372,10 +442,13 @@ video::-webkit-media-controls-fullscreen-button { display: none !important; }
         font-weight: 700;
     }
     .info > div ul li {
-        line-height:2;
-      
+        line-height:2.5;
+        font-size:1.4rem;
     }
     
+    .info > div p .mini {
+        font-size:1.5rem;
+    }
     
     /*구글맵*/
 
@@ -405,7 +478,7 @@ video::-webkit-media-controls-fullscreen-button { display: none !important; }
         position:relative;
         margin:30px auto;
         width:100%;
-        height:400px;
+        height:500px;
         
         
     }
@@ -438,7 +511,6 @@ video::-webkit-media-controls-fullscreen-button { display: none !important; }
         background:#16305f ;
         padding:29.51px 0;
         box-sizing:border-box;
-        
     }
 
     .f_wrap{
