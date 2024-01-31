@@ -16,7 +16,6 @@
     .wraps > section:not(.visual) {
         padding-top:70px; 
         box-sizing: border-box;
-        background: #fff;
     }
     .wraps{
         height: 100%;
@@ -257,18 +256,19 @@
         flex-wrap:wrap;
         justify-content:space-between; 
         margin-top:50px;
+        font-size:1.5rem;
     }
 
     .service ul li {
         width:48.5%; 
-        height:300px;
+        height:250px;
         position:relative; 
         background: #dfeafe; 
         border-radius: 1.8rem;
     }
 
     .service ul li h3 {
-        font-size:2.2rem;
+        font-size:2rem;
         padding-bottom:.7rem;
     } 
 
@@ -286,7 +286,7 @@
 
     .service ul img{
         width: 100%; 
-        height:100px; 
+        height:85px; 
         object-fit: contain;
     }
 
@@ -373,7 +373,7 @@
     .business ul li{
         width:13rem;
         height:13rem;
-        padding:19.8px 0px;
+        padding:20px 0px;
         border-radius: 30px; 
         box-shadow: 5px 2px 22px -15px;
         background: #fff;
@@ -389,7 +389,7 @@
     .business ul li p{
         padding-top:5px;
         color:#080808;
-        font-size:1.8rem;
+        font-size:1.6rem;
     }
 
 
@@ -406,11 +406,10 @@
     }
 
     .info {
+        padding-top:0px;
         text-align: left;
-        box-sizing: border-box;            
-        
-        font-size:2rem;
-        padding-top:45px;
+        box-sizing: border-box;        
+        font-size:1.6rem;
         vertical-align: center;
 
     }
@@ -438,8 +437,8 @@
         font-weight: 700;
     }
     .info > div ul li {
-        line-height:1.8;
-        font-size:1.8rem;
+        line-height:2.5;
+        font-size:1.4rem;
     }
     
     .info > div p .mini {
@@ -513,6 +512,7 @@
         max-width:90%;
         margin:0 auto;
         color:#fff;
+        font-size:1.4rem;
     }
 
     .f_wrap  h1 img{
