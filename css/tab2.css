@@ -79,7 +79,7 @@
     }
 
     header .logo{
-        width:12.6rem;
+        width:11rem;
         height:100%;
     }
     header .logo a{
@@ -118,8 +118,8 @@
     .scroll {
         position: absolute;
         left: 50%;
-        bottom: 40px;
-        transform: translate(-50%,0);
+        bottom: 25px;
+        transform: translateX(-50%);
         z-index: 1;
     
     }
@@ -204,7 +204,7 @@
         width: 90%;
         position: relative;
         left: 5%;
-        bottom: 500px;
+        bottom: 360px;
     } 
 
     .visual .visual_text h3{
@@ -350,46 +350,54 @@
         color: #080808;
         letter-spacing: -1.28px;
         text-align: center;
-        margin: 20px 0 ;
+        margin: 30px 0 ;
 
     }
 
     .business div > img{
-        width:2rem;
+        width:4rem;
     }
     .m95{width:95%!important;}
 
     .business ul{
-        display:flex; 
+        /* display:flex;  */
         margin:0 auto;
-        align-items: center; 
-        justify-content:center;
+        /* align-items: center; 
+        justify-content:center; */
     }
 
     .business ul li{
-        width:8rem;
-        height:8rem;
-        padding:10px 0px;
+        width:70%;
+        height:100px;
+       
         border-radius: 10px; 
         box-shadow: 5px 2px 22px -15px;
         background: #fff;
         text-align:center;   
-        box-sizing: border-box;
-        margin-right:5px;
+        box-sizing: border-box; 
+        margin:10px auto;
+position:relative;
+       
     }
-    .business ul li:last-child{
-        margin-right:0px;
-    }
-
-
+ 
+    .business ul li div{
+        position:absolute;
+        left: 50%;
+        top: 50px;
+        transform:translate(-50%,-50%);
+        display:flex;
+        align-items:center;
+width: 160px;justify-content:center;
+}
     .business ul li div img{
-        width:3rem;
+        width:4.3rem;
     }
 
     .business ul li p{
-        padding-top:2px;
+        display:inline-block;
         color:#080808;
-        font-size:1.3rem;
+        font-size:1.6rem;
+margin-left:30px;
     }
 
 
