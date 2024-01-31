@@ -3,6 +3,10 @@
 
 @media(min-width:1024px){
 
+         .wraps > section {
+            height:100vh;
+            min-height:910px;
+    }
 
         .wraps > section:last-child {
             height:calc(100vh - 200px);
