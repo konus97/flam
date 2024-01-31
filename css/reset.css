@@ -66,8 +66,12 @@ body{
 }
 
 
+
+
+
+/*고해상도 pc*/
 @media(min-width:1921px){
-    /*.information & #map */
+  
 
 
     .visual .visual_text{
@@ -96,6 +100,7 @@ body{
         word-wrap: break-word;
     }
 
+      /*.information & #map */
     #map{
         height:calc(100vh - 200px);
         position:relative;
