@@ -123,6 +123,16 @@ body{
         font-weight: 700;
         padding:60px 0px 100px;
     }
+    
+        /*카카오맵*/
+        .kakaomap{
+            position:relative;
+            margin:0 auto;
+            width:50%;
+            max-height:700px;
+            min-height: 630px;
+            
+        }
 
 }
 
