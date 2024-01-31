@@ -404,12 +404,14 @@
         background:#16305f ;
         padding:29.51px 0;
         box-sizing:border-box;
+        
     }
 
     .f_wrap{
         max-width:90%;
         margin:0 auto;
         color:#fff;
+        font-size:1.4rem;
     }
 
     .f_wrap  h1 img{
