@@ -199,7 +199,7 @@
 
     .text_group {
         /* text-align:center; */
-        font-size :1.7rem;
+        font-size :1.6rem;
     }
 
     .text_group h2 {
@@ -296,17 +296,12 @@
 
     /*.information & #map */
 
-        
-    #map{
-       
-        
-    }
 
     .info {
         
         box-sizing: border-box;            
         
-        font-size:1.7rem;
+        font-size:1.4rem;
        
         vertical-align: center;
 
@@ -335,13 +330,10 @@
         font-weight: 700;
     }
     .info > div ul li {
-        line-height:1.8;
-        font-size:1.5rem;
+        line-height:2;
+      
     }
     
-    .info > div p .mini {
-        font-size:1.5rem;
-    }
     
     /*구글맵*/
 
