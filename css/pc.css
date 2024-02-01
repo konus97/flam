@@ -14,11 +14,7 @@
             box-sizing: border-box;
         }
 
-        .wraps > section:not(.visual) {
-            padding-top:70px; 
-            box-sizing: border-box;
-            background: #fff;
-        }
+      
         .wraps{
             height: 100%;
             min-height: 100%;

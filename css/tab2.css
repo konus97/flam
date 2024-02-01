@@ -14,8 +14,8 @@
     }
 
     .wraps > section:not(.visual) {
-        padding-top:70px; 
-        box-sizing: border-box;
+        justify-content:center;
+        flex-direction: column;
     }
     .wraps{
         height: 100%;
@@ -339,7 +339,7 @@
         position:absolute;
         top:50%;
         transform: translateY(-50%);
-        padding: 35px 0 28px;
+        padding: 70px;
         
     }
     .business .con2_wrap > div{
@@ -571,8 +571,8 @@
         box-sizing: border-box;
         text-align: center;
         position: fixed;
-        right:2vw;
-        bottom:2vw;
+        right:3.5vw;
+        bottom:3.5vw;
         align-items: center;
         background: #fff;
         box-shadow: 0 0 0 1px #dadcdf, 0 4px 8px 0 rgba(0,0,0,0.2);

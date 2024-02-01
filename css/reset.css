@@ -48,6 +48,11 @@ body{
     word-break: keep-all;
 }
 
+.wraps > section:not(.visual) {
+    padding-top:70px; 
+    box-sizing: border-box;
+    display: flex;   
+}
 /*container size*/
 
 /*컨테이너 사이즈*/
@@ -66,9 +71,6 @@ body{
 @media(min-width:1921px){
   
 
-    .visual{
-       
-    }
 
     .visual .visual_text{
         width: 90%;
