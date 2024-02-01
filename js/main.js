@@ -42,6 +42,24 @@
                 });
             });
         }
+            // 스크롤 이벤트를 추가하기 전에 윈도우의 너비를 확인합니다.
+            if ($(window).width() >= 1024) {
+                attachScrollEvent();
+            }
+
+            // 윈도우 리사이즈 이벤트에 따라 스크롤 이벤트를 업데이트합니다.
+            $(window).resize(function () {
+                if ($(window).width() >= 1024) {
+                    // 기존 스크롤 이벤트를 제거합니다.
+                    $(elm).off("wheel DOMMouseScroll");
+                    // 스크롤 이벤트를 다시 추가합니다.
+                    attachScrollEvent();
+                } else {
+                    // 윈도우 너비가 767px 미만인 경우 스크롤 이벤트를 제거합니다.
+                    $(elm).off("wheel DOMMouseScroll");
+                }
+}); 
+        
     });
 
     $(function(){

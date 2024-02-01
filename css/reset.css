@@ -51,7 +51,8 @@ body{
 .wraps > section:not(.visual) {
     padding-top:70px; 
     box-sizing: border-box;
-    display: flex;   
+    display: flex;
+    
 }
 /*container size*/
 
