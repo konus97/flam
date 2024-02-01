@@ -47,13 +47,26 @@ body{
     letter-spacing: -0.03em;
     word-break: keep-all;
 }
-
+@media(max-width:767px){
 .wraps > section:not(.visual) {
-    padding-top:70px; 
+   
     box-sizing: border-box;
     display: flex;
     
+    padding-top: 70px;
+    height: calc(100vh - 70px);
+    box-sizing: border-box;
+    
 }
+}
+@media(min-width:768px){
+    .wraps > section:not(.visual) {
+        padding-top:70px; 
+        box-sizing: border-box;
+        display: flex;
+        
+    }
+    }
 /*container size*/
 
 /*컨테이너 사이즈*/
