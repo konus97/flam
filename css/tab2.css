@@ -8,8 +8,8 @@
         /* min-height:910px; */
     }
     .wraps > section:last-child {
-        /* height:calc(100vh - 200px);
-        padding-top:70px;  */
+        height:calc(100vh - 200px);
+        padding-top:70px; 
         box-sizing: border-box;
     }
 

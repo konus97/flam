@@ -53,8 +53,8 @@ body{
     box-sizing: border-box;
     display: flex;
     
-    padding-top: 70px;
-    height: calc(100vh - 70px);
+    padding-top: 50px;
+    /* height: calc(100vh - 70px); */
     box-sizing: border-box;
     
 }
