@@ -66,12 +66,15 @@ body{
 @media(min-width:1921px){
   
 
+    .visual{
+        position:relative;
+    }
 
     .visual .visual_text{
         width: 90%;
-        position: relative;
+        position: absolute;
         left: 5%;
-        bottom: 550px;
+        bottom: 20vh;
     } 
 
     .visual .visual_text h3{

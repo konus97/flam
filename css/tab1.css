@@ -199,12 +199,15 @@
 
     /*.visual & #main */
 
+    .visual{
+        position:relative;
+    }
 
     .visual .visual_text{
         width: 90%;
-        position: relative;
+        position: absolute;
         left: 5%;
-        bottom: 500px;
+        bottom: 24vh;
     } 
 
     .visual .visual_text h3{
