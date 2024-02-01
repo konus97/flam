@@ -199,10 +199,7 @@
 
     /*.visual & #main */
 
-    .visual{
-        position:relative;
-    }
-
+    
     .visual .visual_text{
         width: 90%;
         position: absolute;
@@ -230,7 +227,8 @@
     }
     .video_wrap{
         width:100%;
-        height:100vh;    
+        height:100vh; 
+        position:relative;   
     }
 
     video{

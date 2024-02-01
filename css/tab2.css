@@ -204,9 +204,9 @@
         width: 90%;
         position: relative;
         left: 50%;
-        bottom: 50%;
+        bottom: 45%;
         text-align:center;
-        transform:translate(-50%,-50%);
+        transform:translate(-50%,-45%);
     } 
 
     .visual .visual_text h3{
@@ -544,7 +544,7 @@
         margin-right:30px;
         font-weight: 200;
         line-height:1.8;
-        letter-spacing: 0.9px;
+       
 
     }
 
