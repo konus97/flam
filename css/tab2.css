@@ -13,10 +13,10 @@
         box-sizing: border-box;
     }
 
-    .wraps > section:not(.visual) {
+    /* .wraps > section:not(.visual) {
         justify-content:center;
         flex-direction: column;
-    }
+    } */
     .wraps{
         height: 100%;
         min-height: 100%;
@@ -257,13 +257,13 @@
         box-sizing: border-box;
         flex-wrap:wrap;
         justify-content:space-between; 
-        margin-top:50px;
+        padding-top:30px;
         font-size:1.2rem;
     }
 
     .service ul li {
         width:48.5%; 
-        height:150px;
+        height:25vw;
         position:relative; 
         background: #dfeafe; 
         border-radius: 1.8rem;
@@ -381,22 +381,31 @@
     [data-aos=fade-up] {
         transform: translate3d(0,0px,0)!important;
     }
-    
+    .business ul {
+        width:70%;
+    }
     
     .business ul li{
-        width:70%;
+        width:100%;
         height:70px;
         border-radius: 10px; 
         box-shadow: 5px 2px 22px -15px;
-        background: #fff;
+        background: #dfeafe;
         text-align:center;   
         box-sizing: border-box; 
         margin:10px auto;
         position:relative;
        
     }
+    .offer_wrap{
+        text-align:Center;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
  
-    .business ul li div{
+    /* .business ul li div{
         position:absolute;
         left: 50%;
         top: 50%;
@@ -405,7 +414,7 @@
         align-items:center;
         width: 160px;
         justify-content:center;
-}
+} */
     .business ul li div img{
         width:4.3rem;
     }
@@ -431,11 +440,14 @@
     }
 
     .info {
-        padding-top:0px;
+        padding-top:20px;
         text-align: left;
         box-sizing: border-box;        
         font-size:1.4rem;
-        vertical-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    
 
     }
     
@@ -453,7 +465,7 @@
     .info .address {
         color: #16305f;
         font-weight: 700;
-        padding:3rem 0rem;
+        padding:7px 0rem;
     }
 
 
@@ -474,9 +486,11 @@
     /*카카오맵*/
     .kakaomap{
         position:relative;
-        margin:30px auto;
+        margin:10px auto;
         width:100%;
         height:200px;
+        min-height:150px;
+        max-height:400px;
         
         
     }
