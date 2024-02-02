@@ -147,12 +147,16 @@
     /*모바일 서비스 터치 이벤트*/
     $(document).on("touchstart", ".service_box", function () {
         console.log("Touch start event");
-        $(this).children("p").stop().fadeIn();
-    });
-    
-    $(document).on("touchend", ".service_box", function () {
-        console.log("Touch end event");
-        $(this).children("p").stop().fadeOut();
+        
+        var $pElement = $(this).children("p");
+        
+        // 3초 동안 보이게 하기
+        $pElement.stop().fadeIn();
+        
+        // 3초 후에 숨기기
+        setTimeout(function() {
+            $pElement.stop().fadeOut();
+        }, 3000);
     });
 
     /*스크롤 시 지도 움직임 막기*/
