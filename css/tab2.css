@@ -278,7 +278,7 @@
     } 
     .service_box p {
       
-        opacity: 0;
+        display: none;
     } 
 
     .m_mouseover{width:100%; padding:46.22px 6%;border-radius: 1.8rem;
