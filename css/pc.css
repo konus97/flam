@@ -237,12 +237,12 @@
 
         /*.service & #work */
 
-        .service {          
+     
+        .service_wrap{
             display: flex;
             justify-content: space-between;
             align-items:center;
             flex-direction:row-reverse;
-            
         }
 
         .service ul {
@@ -314,25 +314,21 @@
         /*.business & #offer */
 
         .business{
-            position:relative;
+           position:relative;
+
         }
         .business .con2_wrap{
-            width:100%;
+            width: 100%;
             box-sizing: border-box;
-            text-align:center;
-            margin:0 auto ;
+            text-align: center;
+            margin: 0 auto;
             background: #eff2f4;
-            position:absolute;
-            top:50%;
+            position: absolute;
+            top: 50%;
             transform: translateY(-50%);
-            padding: 60px 0;
-            
+            padding: 60px 0px;
         }
-        .business .con2_wrap > div{
-            background: #eff2f4;
-
-            
-        }
+      
 
         .business div h3{
            
@@ -351,10 +347,11 @@
         }
 
         .business ul{
+            width:100%;
             display:flex; 
             margin:0 auto;
             align-items: center; 
-            justify-content:space-between;
+            justify-content:center;
         }
 
         .business ul li{
@@ -366,6 +363,10 @@
             background: #fff;
             text-align:center;   
             box-sizing: border-box;
+            margin-right:25px;
+        }
+        .business ul li:last-child{
+            margin-right:0px;
         }
 
 
@@ -384,11 +385,10 @@
         /*.information & #map */
 
             
-        #map{
-            height:calc(100vh - 200px);
-            /* position:relative;
-            transform: translateY(-200px);
-             */
+        .information{
+             height:calc(100vh - 100px);
+            position:relative;
+            
             
         }
 
@@ -399,7 +399,7 @@
             font-size:2rem;
             padding-top:70px;
             justify-content: space-between;
-            vertical-align: center;
+         
 
         }
         
@@ -465,11 +465,11 @@
     
     /*푸터*/
         footer{
-            height: 200px;
+            height:100px;
             position : relative;
             transform : translateY(-100%);
             background:#16305f ;
-            padding:29.51px 0;
+            padding:20.805px 0;
             box-sizing:border-box;
         }
 
@@ -478,10 +478,17 @@
             margin:0 auto;
             color:#fff;
         }
-
+        .f_wrap::after, .f_wrap::before{
+            content:"";
+            display:block;
+            clear:both;
+        }
+        .f_wrap  h1 {
+            float:right;
+        }
         .f_wrap  h1 img{
-            width:12.6rem;
-            margin-bottom:.7vw;
+            width:14rem;
+           
         }
 
         .f_wrap p{
@@ -502,14 +509,14 @@
             display: inline-block;
             color:rgba(0255,255,255,.5);
             font-size:1rem;
-            margin-top:10px;
+            
             letter-spacing: 1px;
         }
 
 
         /*고정 상단 버튼*/
         .top_btn{
-            display:block;
+            display:none;
             width:40px;
             height:40px;
             border-radius: 50%;
@@ -517,7 +524,7 @@
             text-align: center;
             position: fixed;
             right:2vw;
-            bottom:2vw;
+            bottom:10vh;
             align-items: center;
             background: #fff;
             box-shadow: 0 0 0 1px #dadcdf, 0 4px 8px 0 rgba(0,0,0,0.2);

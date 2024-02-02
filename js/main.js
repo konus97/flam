@@ -140,3 +140,15 @@
         } );
     });
 
+    $(function(){
+        if ($(window).width() <= 767) {
+            $(".service_box").on("mouseenter", function () {
+                $(this).children("p").stop().animate({  opacity: "1"});
+            })
+            $(".service_box").on("mouseleave", function () {
+                $(this).children("p").stop().css({  opacity: "0"});
+                
+            })
+        };
+
+    });

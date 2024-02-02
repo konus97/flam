@@ -16,7 +16,6 @@ table {border-collapse: collapse;}
 
 .clear:before,
 .clear:after {content: ''; display: block; clear: both;}
- 
 
 
 *{
@@ -47,6 +46,15 @@ body{
     letter-spacing: -0.03em;
     word-break: keep-all;
 }
+
+.legth_center{
+    display:flex;
+    justify-content:space-between;
+    flex-direction: column;
+}
+.flex{
+    display:flex;
+}
 @media(max-width:767px){
 .wraps > section:not(.visual) {
    
@@ -64,7 +72,7 @@ body{
     .wraps > section:not(.visual) {
         padding-top:70px; 
         box-sizing: border-box;
-        display: flex;
+       
         
     }
     }
@@ -120,9 +128,9 @@ body{
 
       /*.information & #map */
     #map{
-        height:calc(100vh - 200px);
+        height:calc(100vh - 100px);
         position:relative;
-        transform: translateY(-200px);
+        transform: translateY(-100px);
         
         
     }
