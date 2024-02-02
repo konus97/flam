@@ -127,6 +127,7 @@
 
     /*scroll top버튼*/
     $(function(){
+        $('.top_btn').hide();
         $( window ).scroll( function() {
             if ( $( this ).scrollTop() > 600 ) {/*600보다 더 내려왔을 때 해당 아이콘이 보이게 함*/
             $( '.top_btn' ).fadeIn();

@@ -55,9 +55,9 @@ body{
 .flex{
     display:flex;
 }
-.top_btn{
+/*.top_btn{
     display:none;
-}
+}*/
 @media(max-width:767px){
 .wraps > section:not(.visual) {
    
