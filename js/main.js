@@ -152,3 +152,7 @@
         };
 
     });
+
+    $(function(){
+        daum.roughmap.draggable(false);
+    });
