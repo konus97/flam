@@ -154,5 +154,5 @@
     });
 
     $(function(){
-        daum.roughmap.draggable(false);
+        daum.roughmap.draggable;
     });
