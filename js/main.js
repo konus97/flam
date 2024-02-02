@@ -146,15 +146,14 @@
 
     $(function(){
         if ($(window).width() <= 767) {
-            $(".service_box").on("mouseenter", function () {
-                $(this).children("p").stop().animate({  opacity: "1"});
-            })
-            $(".service_box").on("mouseleave", function () {
-                $(this).children("p").stop().css({  opacity: "0"});
-                
-            })
-        };
-
+            $(".service_box").on("touchstart", function () {
+                $(this).children("p").stop().fadeIn();
+            });
+    
+            $(".service_box").on("touchend", function () {
+                $(this).children("p").stop().fadeOut();
+            });
+        }
     });
 
     $(function(){
