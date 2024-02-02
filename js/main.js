@@ -128,13 +128,16 @@
     /*scroll top버튼*/
     $(function(){
         $('.top_btn').hide();
-        $( window ).scroll( function() {
-            if ( $( this ).scrollTop() > 600 ) {/*600보다 더 내려왔을 때 해당 아이콘이 보이게 함*/
-            $( '.top_btn' ).fadeIn();
-                } else {
-                    $( '.top_btn' ).fadeOut();
-                }
-        } );
+        $(window).scroll(function() {
+            
+            var serviceTop = $('.service').offset().top;
+        
+            if ($(window).scrollTop() >= serviceTop) {
+              $('.top_btn').fadeIn();
+            } else {
+              $('.top_btn').fadeOut();
+            }
+          });
         $( '.top_btn' ).click( function() {
             $( 'html, body' ).animate( { scrollTop : 0 }, 400 );/*클릭 시 상단으로 올라가는데 0.4초소요*/
         return false;
