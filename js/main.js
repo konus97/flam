@@ -147,10 +147,12 @@
     $(function(){
         if ($(window).width() <= 767) {
             $(".service_box").on("touchstart", function () {
+                console.log("Touch start event");
                 $(this).children("p").stop().fadeIn();
             });
     
             $(".service_box").on("touchend", function () {
+                console.log("Touch end event");
                 $(this).children("p").stop().fadeOut();
             });
         }
