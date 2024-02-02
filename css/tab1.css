@@ -358,8 +358,7 @@
         margin: 20px 0 57px;
 
     }
-    .flip-left{
-    }
+    
 
     .business div > img{
         width:4.5rem;
@@ -496,7 +495,7 @@
 
 /*푸터*/
 footer{
-    height:100px;
+   /* height:100px;*/
     position : relative;
     transform : translateY(-100%);
     background:#16305f ;

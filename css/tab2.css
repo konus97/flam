@@ -278,11 +278,28 @@
     } 
     .service_box p {
       
-        display: none;
+        opacity: 0;
+        padding:0px 5px;
+        box-sizing: border-box;
+       
+        
     } 
 
-    .m_mouseover{width:100%; padding:46.22px 6%;border-radius: 1.8rem;
-         height:100%; box-sizing: border-box; background:#16305fe8; position:absolute;top:0;left:0;bottom:0; right:0;color:#fff;}
+    .m_mouseover{
+        width:100%;
+        border-radius: 1.8rem;
+        height:100%;
+        background:#16305fe8;
+        color:#fff;
+        display : flex;
+        justify-content : center;
+        align-items : center;
+        position:absolute;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+    }
 
    
 
@@ -443,7 +460,7 @@
 
         
     .information{
-        height:calc(100vh - 100px);
+        /* height:calc(100vh - 100px); */
        position:relative;
      
    }
@@ -524,7 +541,7 @@
 
 /*푸터*/
     footer{
-        height:100px;
+        /* height:100px; */
         position : relative;
         transform : translateY(-100%);
         background:#16305f ;

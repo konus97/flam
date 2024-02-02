@@ -147,19 +147,27 @@
     /*모바일 서비스 터치 이벤트*/
     $(document).on("touchstart", ".service_box", function () {
         console.log("Touch start event");
-        
-        var $pElement = $(this).children("p");
-        
-        // 3초 동안 보이게 하기
-        $pElement.stop().fadeIn();
-        
-        // 3초 후에 숨기기
+    
+        var $currentServiceBox = $(this);
+        var $pElements = $(".service_box").not($currentServiceBox).children("p");
+    
+        // 다른 요소의 p 숨기기
+        $pElements.stop().animate({opacity:"0"});
+    
+        // 현재 요소의 p 3초 동안 보이게 하기
+        $currentServiceBox.children("p").stop().animate({opacity:"1"});
+    
+        // 3초 후에 현재 요소의 p 숨기기
         setTimeout(function() {
-            $pElement.stop().fadeOut();
+            $currentServiceBox.children("p").stop().animate({opacity:"0"});
         }, 3000);
     });
 
+
+
     /*스크롤 시 지도 움직임 막기*/
     $(function(){
-        daum.roughmap.draggable;
+        
+        map.setDraggable(false);
+        map.setZoomable(false);
     });
