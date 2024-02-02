@@ -144,20 +144,18 @@
         } );
     });
 
-    $(function(){
-        if ($(window).width() <= 767) {
-            $(".service_box").on("touchstart", function () {
-                console.log("Touch start event");
-                $(this).children("p").stop().fadeIn();
-            });
+    /*모바일 서비스 터치 이벤트*/
+    $(document).on("touchstart", ".service_box", function () {
+        console.log("Touch start event");
+        $(this).children("p").stop().fadeIn();
+    });
     
-            $(".service_box").on("touchend", function () {
-                console.log("Touch end event");
-                $(this).children("p").stop().fadeOut();
-            });
-        }
+    $(document).on("touchend", ".service_box", function () {
+        console.log("Touch end event");
+        $(this).children("p").stop().fadeOut();
     });
 
+    /*스크롤 시 지도 움직임 막기*/
     $(function(){
         daum.roughmap.draggable;
     });
