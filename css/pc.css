@@ -542,8 +542,8 @@
             box-sizing: border-box;
             text-align: center;
             position: fixed;
-            right:8vw;
-            bottom:8vw;
+            right:3vw;
+            bottom:6vw;
             align-items: center;
             background: #fff;
             box-shadow: 0 0 0 1px #dadcdf, 0 4px 8px 0 rgba(0,0,0,0.2);
