@@ -5,7 +5,7 @@
 
          .wraps > section {
             height:100vh;
-            min-height:910px;
+            /* min-height:910px; */
     }
 
         .wraps > section:last-child {
@@ -240,25 +240,36 @@
      
         .service_wrap{
             display: flex;
-            justify-content: space-between;
+            gap:10%;
             align-items:center;
             flex-direction:row-reverse;
+            justify-content: space-between;
         }
 
-        .service ul {
-            width:50%; 
-            display:flex; 
-            padding:20px 0px;
-            box-sizing: border-box;
-            flex-wrap:wrap;
-            justify-content:center; 
+        .service ul{
+            display: flex;           
         }
 
-        .service ul li {
-            width:47%; 
-            height:350px;
-            position:relative; 
-            background: #dfeafe; 
+        .left{
+            display:flex;
+            flex-direction: row;
+            gap:16px;
+            
+        }
+        .left ul{
+            display:flex;
+            flex-direction: column;
+            gap:16px;
+        }
+        .left > ul:nth-child(2) li:first-child{
+            margin-top:50px;
+        }
+
+        .left > ul li{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding:60px 0px;
             border-radius: 1.8rem;
         }
 
@@ -269,11 +280,15 @@
 
        
 
-        .service ul li:nth-of-type(2n){
-            margin-top:3%;
-            margin-left:3%;
-            ;background:#f5f5f5;
+        .service ul:first-child li{
+          
+            background:#dfeafe;
         }
+        .service ul:last-child li{
+           
+            background:#f5f5f5;
+        }
+   
 
         .service ul img{
             width: 100%; 
@@ -287,7 +302,7 @@
             display:flex;
             flex-direction: column;
             justify-content: center;
-            height:90%;
+            height:100%;
             text-align:Center;
     
         }
@@ -406,6 +421,9 @@
         .info > div:first-child {
            
             width:50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
 
         .info h2 {
@@ -443,8 +461,9 @@
             max-height:50vh;
             min-height: 488px;
             
+            
         }
-
+        
         .kakaomap > .root_daum_roughmap{
             width:100%;
             height:100%;
@@ -469,7 +488,7 @@
             position : relative;
             transform : translateY(-100%);
             background:#16305f ;
-            padding:20.805px 0;
+            padding:22.805px 0;
             box-sizing:border-box;
         }
 

@@ -162,7 +162,9 @@
             $currentServiceBox.children("p").stop().animate({opacity:"0"});
         }, 3000);
     });
+    
 
+    
 
 
     /*스크롤 시 지도 움직임 막기*/
@@ -171,3 +173,5 @@
         map.setDraggable(false);
         map.setZoomable(false);
     });
+
+  

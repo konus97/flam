@@ -1,8 +1,4 @@
-/* @charset "utf-8";
 
-html,body{margin: 0; padding: 0;}
-
-header,nav,section,article,aside,footer,main,figure {display: block;} /*ie10이하에서 html5태그를 인식하지 못하는 부분에 대한 재선언*/
 
 ul li {list-style: none;}
 a {text-decoration: none; color: inherit;}
@@ -55,21 +51,51 @@ body{
 .flex{
     display:flex;
 }
-/*.top_btn{
-    display:none;
-}*/
-@media(max-width:767px){
-.wraps > section:not(.visual) {
-   
-    box-sizing: border-box;
-    display: flex;
-    
-    padding-top: 70px;
-    /* height: calc(100vh - 70px); */
-    box-sizing: border-box;
-    
-    
+
+@media(min-width:1022px) and (max-width:1330px){
+    .text_group {
+        text-align:right;
+        font-size :1.5rem;
+    }
+
+    .text_group h2 {
+        font-size: 6rem;
+        font-weight: 400;
+        line-height: 1.2;
+        margin-bottom:15px;
+    }
+
+    .text_group h2 span {
+        font-weight: 700;
+        color: #16305f;
+    }
+
+    .left > ul li{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding:30px 0px;
+        border-radius: 1.8rem;
+    }
+    .service ul li h3 {
+        font-size:1.8rem;
+        padding-bottom:.7rem;
+    } 
+
 }
+
+@media(max-width:767px){
+    .wraps > section:not(.visual) {
+    
+        box-sizing: border-box;
+        display: flex;
+        
+        padding-top: 70px;
+        /* height: calc(100vh - 70px); */
+        box-sizing: border-box;
+        
+        
+    }
 }
 @media(min-width:768px){
     .wraps > section:not(.visual) {
@@ -78,16 +104,16 @@ body{
        
         
     }
-    }
-/*container size*/
+ }
 
+  
+    
 /*컨테이너 사이즈*/
 .w1200{
     max-width:1200px;
     width:85%;
     margin:0 auto;
 }
-
 
 
 
@@ -147,11 +173,7 @@ body{
         font-size:2rem;
 
     }
-    
-     .info > div:first-child {
-         padding:50px 0px;
-         width:50%;
-     }
+
 
 
     .info .address {
@@ -160,17 +182,34 @@ body{
         padding:60px 0px 100px;
     }
     
-        /*카카오맵*/
-        .kakaomap{
-            position:relative;
-            margin:0 auto;
-            width:50%;
-            max-height:700px;
-            min-height: 630px;
-            
-        }
+    /*카카오맵*/
+    .kakaomap{
+        position:relative;
+        margin:0 auto;
+        width:50%;
+        height: auto;
+        max-height:770px;
+        
+    }
+    .kakaomap > .root_daum_roughmap{
+        width:100%;
+        height:100%;
+    }
 
-}
+    .kakaomap > .root_daum_roughmap .wrap_map{
+    position:absolute;
+    z-index:1;
+    top:0;
+    left:0;
+        width:100%;
+        height:100%;
+    }
+
+    .kakaomap .hide {
+        display:none;
+    }
+
+};
 
 
 
