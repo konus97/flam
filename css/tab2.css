@@ -547,14 +547,6 @@
         color:#fff;
         
     }
-    .f_wrap::after, .f_wrap::before{
-        content:"";
-        display:block;
-        clear:both;
-    }
-    .f_wrap  h1 {
-        float:right;
-    }
 
     .f_wrap  h1 img{
         width:10rem;
