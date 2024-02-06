@@ -145,6 +145,7 @@
     });
 
     /*모바일 서비스 터치 이벤트*/
+    if (window.matchMedia("(max-width: 767px)").matches) {
     $(document).on("touchstart", ".service_box", function () {
         console.log("Touch start event");
     
@@ -162,6 +163,7 @@
             $currentServiceBox.children("p").stop().animate({opacity:"0"});
         }, 3000);
     });
+};
     
 
     
