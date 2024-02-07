@@ -32,203 +32,578 @@ body{
 .flex{
     display:flex;
 }
-/* @media(max-width:1023px){ */
-
-/*테블릿 모바일 공통 뽑기*/
-/* .wraps{
-    height: 100%;
-    min-height: 100%;
-    
-    box-sizing: border-box;
-}
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    line-height: 70px;
-    height: 70px;
-    width: 100%;
-    overflow: hidden;
-    z-index: 999;
-    border-bottom:1px solid rgba(255, 255, 255, 0.1);
-    box-sizing: border-box;
-    -webkit-transition-duration:0.4s;
-    -webkit-transition-timing-function:ease;
-    transition-duration:0.4s;
-    transition-timing-function:ease;
-    
-
-    
-} */
-
-
-/*스크롤 할때 헤더*/
-
-/* .down {
-    background-color:(255,255,255,0.7);
-    border-color:rgba(0,0,0,0.1);
-    -webkit-transition-duration:0.4s;
-    -webkit-transition-timing-function:ease;
-    transition-duration:0.4s;
-    transition-timing-function:ease;
-    background: #fff;
-}
-
-header.down > div ul a {
-    color: #252525;
-}
-
-header.down .logo a{
-    display:block;
+.wrap{
     width:100%;
-    height:100%;
-    background: url(../img/h_logo_n.svg)no-repeat center / 100%;
-} */
+}
 
-
-/*헤더*/
-/* header > div{
-    display:flex;
-    justify-content: space-between;
-    max-width:90%;
+    
+/*컨테이너 사이즈*/
+.w1200{
+    max-width:1200px;
+    width:85%;
     margin:0 auto;
-    height:100%;
 }
-header .logo a{
-    display:block;
+
+@media(min-width:1024px) {
+    .business ul li{
+       
+        padding:43px 0px;
+      
+    }
+    .left > ul:nth-child(2) li:first-child{
+        margin-top:50px;
+    }
+    
+    .left > ul li{
+        padding:60px 0px; 
+    }
+    .text_group{
+        text-align:right;
+    }
+    .address{
+        padding:60px 0px 100px
+    }
+    .business ul li:last-child{
+        margin-right:0px;
+    }
+    .business ul li{
+        margin-right:25px;
+    }
+
+}
+
+
+
+@media(min-width:1024px) and (max-width:1330px){
+    .text_group {
+        text-align:right;
+        font-size :1.5rem;
+    }
+
+    .text_group h2 {
+        font-size: 6rem;
+    }
+    .text_group p{
+        text-wrap: nowrap;
+    }
+
+    .left > ul li{
+        padding:30px 0px;
+    }
+    .service ul li h3 {
+        font-size:1.8rem;
+    }
+ 
+    .info h2{
+        font-size:4.5rem;
+    }
+    .address{
+        text-wrap: pretty;
+    }
+
+}
+
+
+  
+
+
+
+@media(max-width:767px){
+   
+    .wraps > section:not(.visual) {
+    
+        display: flex;        
+        padding-top: 70px;
+        box-sizing: border-box;
+        
+        
+    }
+
+    header .logo{
+        width:11rem;
+    }
+    header > div ul {
+        display:none;
+    }
+    .scroll {
+        bottom: 25px;
+    
+    }
+    .scroll_text {
+        font-size:1.4rem;
+    }
+    .m_none{display:none;}
+   
+    .visual .visual_text{
+        width: 90%;
+        position: relative;
+        left: 50%;
+        bottom: 45%;
+        text-align:center;
+        transform:translate(-50%,-45%);
+    } 
+    .visual .visual_text h3{
+        font-size:3.8rem;
+    }
+    .visual .visual_text p{
+        font-size: 1.6rem;
+        
+    }
+
+
+.service_wrap{
+    width:100%;
+    height:100% ;
+    justify-content: center; 
+    flex-direction: column;
+    gap:3%;
+
+    
+}
+.left{
+    width:100%;
+}
+
+.service ul {   
+    width:100%; 
+    font-size:1.2rem;
+}
+
+.service ul li h3 {
+    font-size:1.4rem;
+} 
+.left .service_box .m_mouseover {
+  
+    opacity: 0;
+    box-sizing: border-box;
+   
+    
+} 
+
+.m_mouseover{
+    width:100%;
+    padding:20px;
+    border-radius: 1.8rem;
+    height:100%;
+    background:#16305fe8;
+    color:#fff;
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+}
+
+.service ul img{
+    height:60px; 
+}
+
+.service ul li .service_box{
     width:100%;
     height:100%;
-    background: url(../img/h_logo_w.svg)no-repeat center / 100%;
+    margin:0 auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align:Center;
+    position:relative;
+   padding:25px 15px;
+   box-sizing: border-box;
+
+}
+.text_group{
+    width:100%;
+}
+.text_group h2 {
+    font-size: 4rem;
+    margin-bottom:7px;
+}
+.text_group p {
+    font-size: 1.5rem;
+    padding-top:13px;
+    
+  
 }
 
 
-.dots {
-    width: 2.4rem;
-    margin: 0 auto;
-    height: 45px;
-    position: relative;
+
+/*.business & #offer */
+
+
+
+.business div h3{
+    font-size: 2.2rem;
+    margin: 15px 0 30px;
 }
-.dots span {
-    position: absolute;
-    display: block;
-    background-color: #fff;
-    border-radius: 50%;
-    width: 2.4rem;
-    height: 24px;
+
+.business div > img{
+    width:3.5rem;
 }
-.dots span:nth-child(1) {
-    left: 0;
-    top: 0;
-    opacity: .1;
-    transform: translateY(0px);
-    animation: dots1 2s infinite;
+
+
+
+/* [data-aos=fade-up] {
+    transform: translate3d(0,0px,0)!important;
+} */
+.business ul {
+    flex-direction: column;
 }
-.dots span:nth-child(2) {
-    left: 0;
-    top: 0;
-    opacity: .3;
-    transform: translateY(4px);
-    animation: dots1 2s infinite;
+
+.business ul li{
+    width:70%;
+    height:100px;
+    border-radius: 10px; 
+    box-sizing: border-box; 
+    margin:10px auto;
+    position:relative;
+   
 }
-.dots span:nth-child(3) {
-    left: 0;
-    top: 0;
-    opacity: .5;
-    transform: translateY(9px);
-    animation: dots1 2s infinite;
+.con2_wrap{
+    text-align:Center;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
 }
-.dots span:nth-child(4) {
-    left: 0;
-    top: 0;
-    opacity: .7;
-    transform: translateY(13px);
-    animation: dots1 2s infinite;
+
+.business ul li div{
+   
+    display:flex;
+    align-items:center;
+    width: 160px;
+    justify-content:center;
+    margin:0 auto;
+    height:100px;
+    
 }
-.dots span:nth-child(5) {
-left: 0;
-    top: 0;
-    opacity: .8;
-    transform: translateY(16px);
-    animation: dots1 2s infinite;
+.business ul li div img{
+    width:5rem;
 }
-.dots span:nth-child(6) {
-    left: 0;
-    top: 0;
-    opacity: 1;
-    transform: translateY(19px);
-    animation: dots1 2s infinite;
+
+.business ul li p{
+    display:inline-block;
+    font-size:1.6rem;
+    margin-left:30px;
 }
-@keyframes dots1{
-    0%{
-    }
-    100%{
-    transform: translateY(19px);
-    }
-}
-    .video_wrap{
-        width:100%;
-        height:100%;    
+
+
+ .info {  
+     font-size:1.4rem;
+     justify-content: center;
+     flex-direction: column;
+     height:calc(100% - 155px);
+   
+
+ }
+ 
+ 
+ .info > div:first-child {
+    
+     width:100%;
+ }
+
+ .info h2 {
+     font-size:3rem;
+ }
+
+
+ .info .address {
+     padding:7px 0rem;
+ }
+
+
+ .info > div ul li {
+     line-height:2;
+     font-size:1.4rem;
+ }
+ 
+ .info > div p .mini {
+     font-size:1.2rem;
+ }
+ 
+
+ /*카카오맵*/
+ .kakaomap{
+     position:relative;
+     margin:20px auto 0px;
+     width:100%;
+     height:45%;
+     max-height:350px;
+     
+     
+ }
+
+
+
+/*푸터*/
+ footer{
+     padding:24.11px 0;
+ }
+ 
+ .f_wrap  h1 img{
+     width:10rem;
+     margin-bottom:.7vw;
+ }
+
+ .f_wrap p{
+     font-size:1.3rem;
+ }
+
+ .f_wrap .copyright{
+     margin-top:10px;
+ }
+
+    /*고정 상단 버튼*/
+    .top_btn{
+        right:8.5vw;
+        bottom:15rem;
+        align-items: center;
     }
 
-    video{
-        width:100%; 
-        height:100%;
-        object-fit:cover;
+
+}
+
+
+@media(min-width:768px) and (max-width:1023px){
+    .body{
+        font-size:1.4rem;
     }
+    .wraps > section:not(.visual) {
+        padding-top:70px; 
+        box-sizing: border-box;
+       
+        
+    }
+    header > div ul a{
+        padding: 0 25px;
+    }
+    .visual .visual_text{
+        bottom: 24vh;
+    } 
+    
+    .visual .visual_text h3{
+        letter-spacing: 0em;
+        line-height: 1.4;
+        color: #fff;
+        font-weight: 700;
+}
     .service_wrap{
-        width:100%;
         height:100% ;
         display:flex;
         justify-content: center; 
         flex-direction: column;
         gap:3%;
     }
+    .service ul li h3 {
+        font-size:1.8rem;
+        padding-bottom:.5rem;
+    } 
+    .service ul img{
+        width: 100%; 
+        height:85px; 
+        object-fit: contain;
+    }
     .left{
         display:flex;
         gap:16px;
     
     }
-    
-    .left ul{
-        display:flex;
+    .left > ul li{
+        display: flex;
         flex-direction: column;
-        gap:16px;
+        align-items: center;
+        height:250px;
+        border-radius: 1.8rem;
     }
-    .service ul:first-child li{
-          
-        background:#dfeafe;
+    .left > ul:nth-child(2) li:first-child{
+        margin-top:0px;
     }
-    .service ul:last-child li{
-       
-        background:#f5f5f5;
-    }
-    .text_group h2 span {
-        font-weight: 700;
-        color: #16305f;
-    }
-    .info > div:first-child {
-       
+    .text_group {
         width:100%;
+        font-size :2rem;
+    }
+    .text_group h2 {
+        font-size: 5.82rem;
+        font-weight: 400;
+        line-height: 1.2;
+        margin-bottom:7px;
+    }
+    .text_group p {
+        font-size: 1.8rem;
+        padding-top:10px;
+      
+    }
+    .business .con2_wrap > div{
+        background: #eff2f4;
+
+        
+    }
+    .business div h3{
+       
+        font-size: 3rem;
+        line-height: 1.42;
+        font-weight: 600;
+        color: #080808;
+        letter-spacing: -1.28px;
+        text-align: center;
+        margin: 20px 0 57px;
+    }
+    .business ul{
+        margin:0 auto;
+        flex-direction: column;
+
+    }
+    .business ul li div img{
+        width:5.5rem;
+    }
+ 
+    [data-aos=fade-up] {
+        transform: translate3d(0,0px,0)!important;
     }
     
+
+    .business ul li{
+        width:55%;
+        height:100px;
+        border-radius: 20px; 
+        box-shadow: 5px 2px 22px -15px;
+        background: #fff;
+        text-align:center;   
+        box-sizing: border-box; 
+        margin:10px auto;
+        position:relative;
+       
+    }
+    .business ul li div{
+        position:absolute;
+        left: 50%;
+        top: 50%;
+        transform:translate(-50%,-50%);
+        display:flex;
+        align-items:center;
+        width: 160px;
+        justify-content:center;
+}
+.business ul li:last-child{
+    margin-right:auto;
+}
+.business ul li p{
+    display:inline-block;
+    color:#080808;
+    font-size:1.8rem;
+    margin-left:30px;
+}
+
+.info {
+        
+    box-sizing: border-box;        
+    font-size:1.6rem;
+   
+    justify-content: center;
+    flex-direction: column;
+    height:calc(100% - 100px);
+
+}
+.info > div:first-child {
+       
+    width:100%;
+}
+    /*카카오맵*/
+    .kakaomap{
+
+        margin:30px auto;
+        width:100%;
+        height:400px;
+        
+        
+    }
+    
+
+    .f_wrap  h1 img{
+        width:12.6rem;
+      
+    }
+}
+
+
+/*고해상도 pc*/
+@media(min-width:1921px){
+  
+
+
+    .visual .visual_text{
+        width: 90%;
+        position: absolute;
+        left: 5%;
+        bottom: 20vh;
+    } 
+
+    .visual .visual_text h3{
+        font-size: 7.2rem;
+        letter-spacing: 0em;
+        line-height: 1.4;
+        color: #fff;
+        font-weight: 700;
+    }
+
+    .visual .visual_text p{
+        font-size: 2.4rem;
+        letter-spacing: -0.03em;
+        line-height: 2;
+        color: #fff;
+        font-weight: 400;
+        margin-top: 30px;
+        word-break: keep-all;
+        word-wrap: break-word;
+    }
+    .video_wrap{
+        width:100%;
+        height:100vh;
+        position:relative;
+    }
+
+      /*.information & #map */
+    #map{
+        height:calc(100vh - 100px);
+        position:relative;
+        transform: translateY(-100px);
+        
+        
+    }
+
+    .info {
+        text-align: left;
+        padding:180.75px 0px;
+        box-sizing: border-box;
+        height:100%;
+        display: flex;
+        font-size:2rem;
+
+    }
+
+
+
     .info .address {
         color: #16305f;
         font-weight: 700;
-        padding:1rem 0rem;
+        padding:60px 0px 100px;
     }
-
-
-
-    .info > div span {
-        font-weight: 700;
+    
+    /*카카오맵*/
+    .kakaomap{
+        position:relative;
+        margin:0 auto;
+        width:50%;
+        height: auto;
+        max-height:770px;
+        
     }
-    .info > div ul li {
-        line-height:2;
-        font-size:1.4rem;
-    }
-
     .kakaomap > .root_daum_roughmap{
-        width:100%;           
+        width:100%;
         height:100%;
     }
 
@@ -237,12 +612,13 @@ left: 0;
     z-index:1;
     top:0;
     left:0;
-    width:100%;
-    height:100%;
+        width:100%;
+        height:100%;
     }
 
     .kakaomap .hide {
         display:none;
     }
 
-} */
+};
+
