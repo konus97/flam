@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FLAM</title>
-    <!-- <link rel="stylesheet" href="css/tab1.css"> -->
-    <!-- <link rel="stylesheet" href="css/tab2.css"> -->
-    <link rel="stylesheet" href="css/pc.css">
+    <link rel="stylesheet" href="css/basic.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/total.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -16,7 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <!--파비콘-->
     <link rel="icon" href="img/logo_white_only.png" type="image/svg+xml" />
-    
+
     <script src="js/jquery-3.6.4.min.js"></script>
     <script defer src="js/main.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -25,7 +24,7 @@
 </head>
 
 <body>
-    
+
     <header>
         <div>
             <h1 class="logo"><a href="index.html"></a></h1>
@@ -36,25 +35,28 @@
                 <li><a href="#map">Contact</a></li>
             </ul>
         </div>
-        
+
     </header>
-    <div class="wraps" id="wrap">   
+    <div class="wraps" id="wrap">
         <section class="visual" id="main">
             <div class="video_wrap">
 
-               <video src="video/V3.mp4"muted autoplay loop playsinline></video>
-              
+                <video src="video/V3.mp4" muted autoplay loop playsinline></video>
+
 
             </div>
-           
-            <div class="visual_text">
+
+            <div class="visual_text" data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="1000">
                 <h3>UI/UX Platform<br>
                     <span class="m_none">Performing a</span> System Project
                 </h3>
                 <p>웹스퀘어, 넥사크로 전문 컨설팅 SI 전문 서비스</p>
-                
+
             </div>
-           
+
             <div class="scroll">
                 <div class="scroll_text">SCROLL</div>
                 <div class="dots">
@@ -69,7 +71,10 @@
         </section>
         <section class="service w1200 flex" id="work">
             <div class="service_wrap">
-                <div class="text_group">
+                <div class="text_group"
+                data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500">
                     <h2><span>F</span>OCUS</h2>
                     <h2><span>L</span>EAD</h2>
                     <h2><span>A</span>SSURE</h2>
@@ -79,118 +84,126 @@
 
                 <div class="left">
                     <ul>
-                        <li>                   
-                            <div  class="service_box">
+                        <li data-aos="fade-up"
+                        data-aos-duration="1500">
+                            <div class="service_box">
                                 <img src="img/ui.png" alt="">
                                 <h3>UI/UX 플랫폼 프로젝트</h3>
                                 <p class="m_mouseover">기업 및 기관을 대상으로 웹 표준 UI/UX 업무시스템을 구축하는 프로젝트를 수행합니다.</p>
                             </div>
-                         
+
                         </li>
-                        <li >                   
-                            <div  class="service_box">
+                        <li data-aos="fade-up"
+                        data-aos-duration="1500">
+                            <div class="service_box">
                                 <img src="img/data.png" alt="">
                                 <h3>SI 전문 컨설팅 서비스</h3>
                                 <p class="m_mouseover">고객과의 원활한 소통을 통해 체계적이며 신뢰할 수 있는 SI 전문 컨설팅 서비스를 진행합니다.</p>
                             </div>
-                           
+
                         </li>
                     </ul>
                     <ul>
-                        <li>                     
-                            <div  class="service_box">
+                        <li data-aos="fade-up"
+                        data-aos-duration="1500">
+                            <div class="service_box">
                                 <img src="img/coding.png" alt="">
                                 <h3>IT 솔루션 개발 및 공급</h3>
                                 <p class="m_mouseover">Websquare, Nexacro 기술력과 SI 솔루션을 바탕으로 구조설계 및 시스템을 개발합니다.</p>
                             </div>
-                            
+
                         </li>
-                        <li>                   
-                            <div  class="service_box">
+                        <li data-aos="fade-up"
+                        data-aos-duration="1500">
+                            <div class="service_box">
                                 <img src="img/sevice.png" alt="">
                                 <h3>퍼블리싱·개발 외주</h3>
                                 <p class="m_mouseover">퍼블리셔,개발자가 함께 협력하며 고객의 요구사항을 수용하여 전문적인 업무시스템을 제공합니다.</p>
                             </div>
-                          
+
                         </li>
                     </ul>
                 </div>
-                
+
             </div>
-            
+
         </section>
         <section class="business" id="offer">
-                <div class="con2_wrap  m95">
-                    <img src="img/logo_navy_only.png">
-                    <h3>다양한 사업분야에서 전문 컨설팅하여<br>
-                        개발 · 퍼블리싱을 제공합니다.</h3>
-                        <ul class="w1200" >
-                    
-                            <li>
-                                <div>
-                                    <img src="img/icon1.png">
-                                    <p>기업</p>
-                                </div>
-                                
-                            </li>
-                            <li>
-                                <div>
-                                    <img src="img/icon4.png">
-                                    <p>금융</p>
-                                </div>
-                                
-                            </li>
-                            <li>
-                                <div>
-                                    <img src="img/icon5.png">
-                                    <p>공공</p>
-                                </div>
-                                
-                            </li>
-                            <li>
-                                <div>
-                                    <img src="img/icon3.png">
-                                    <p>교육</p>
-                                </div>
-                                
-                            </li>
-                        </ul>
-                </div>
-                 
-           
-            
+            <div class="con2_wrap  m95">
+                <img src="img/logo_navy_only.png">
+                <h3>다양한 사업분야에서 전문 컨설팅하여<br>
+                    개발 · 퍼블리싱을 제공합니다.</h3>
+                <ul class="w1200">
+
+                    <li data-aos="flip-left"
+                    data-aos-duration="1500">
+                        <div>
+                            <img src="img/icon1.png">
+                            <p>기업</p>
+                        </div>
+
+                    </li>
+                    <li data-aos="flip-left"
+                    data-aos-duration="1500">
+                        <div>
+                            <img src="img/icon4.png">
+                            <p>금융</p>
+                        </div>
+
+                    </li>
+                    <li data-aos="flip-left"
+                    data-aos-duration="1500">
+                        <div>
+                            <img src="img/icon5.png">
+                            <p>공공</p>
+                        </div>
+
+                    </li>
+                    <li data-aos="flip-left"
+                    data-aos-duration="1500">
+                        <div>
+                            <img src="img/icon3.png">
+                            <p>교육</p>
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+
+
+
         </section>
         <section class="information" id="map">
             <div class="info w1200">
                 <div>
                     <p>플램에 대한 정보를 안내해드립니다.</p>
                     <h2>FLAM Information</h2>
-                   
+
                     <p class="address">서울특별시 강서구 마곡중앙6로 70 7층 712호 <span class="mini">(마곡동, 매그넘797)</span></p>
                     <ul>
                         <li class="tel"><span>Tel. </span>02-6953-0829</li>
                         <li class="mail"><span>E-mail. </span>flam@flam.co.kr</li>
                         <li class="subway"><span>Subway. </span>5호선 발산역 (9번출구)</li>
-                       
+
                     </ul>
 
                 </div>
-                
-                <div class="kakaomap" >
+
+                <div class="kakaomap">
                     <div id="daumRoughmapContainer1706747975527" class="root_daum_roughmap root_daum_roughmap_landing"></div>
                 </div>
-               
-                    <script charset="UTF-8">
-                      new daum.roughmap.Lander({
-                        "timestamp" : "1706747975527",
-                        "key" : "2hwvt",
-                        
-          
-                     }).render();
-                    </script>
-                
 
-            
+                <script charset="UTF-8">
+                    new daum.roughmap.Lander({
+                        "timestamp": "1706747975527",
+                        "key": "2hwvt",
+
+
+                    }).render();
+                </script>
+
+
+
             </div>
         </section>
         <footer>
@@ -200,19 +213,20 @@
                     <p><span>(주)플램</span></p>
                     <p><span>대표 : </span> 김성우</p>
                     <p><span>사업자등록번호 : </span> 12345678-12</p>
-                    
-                </div>           
+
+                </div>
                 <p class="copyright">Copyright ⓒ 2024 FLAM Inc.ALL RIGHTS RESERVED.</p>
             </div>
         </footer>
     </div>
-    
+
     <a class="top_btn" href="#main"><span class="material-symbols-outlined">
-        keyboard_control_key
+            keyboard_control_key
         </span>
     </a>
-    
-    
- 
+
+
+
 </body>
+
 </html>
