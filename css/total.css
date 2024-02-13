@@ -47,6 +47,7 @@
 
 }
 
+
 /*1024px~ 1330px*/
 
 @media(min-width:1024px) and (max-width:1330px) {
@@ -118,8 +119,8 @@
     .visual .visual_text {
         width: 90%;
         position: relative;
-        left: 50%;
-        bottom: 45%;
+        
+        bottom: 55%;
         text-align: center;
         transform: translate(-50%, -45%);
     }
@@ -355,6 +356,7 @@
     .body {
         font-size: 1.4rem;
     }
+    
 
     .wraps>section:not(.visual) {
         padding-top: 70px;

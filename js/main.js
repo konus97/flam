@@ -118,8 +118,8 @@ $(function() {
         }, 800);
 
     });
-    /*fade in&out효과*/
     AOS.init();
+   
 });
 
 
@@ -183,5 +183,11 @@ $(function() {
 
     map.setDraggable(false);
     map.setZoomable(false);
+
+  
 });
 
+
+
+       
+   
